@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>546234128034-0jinhs8tlu0jb2d4on5nselmt4riuftg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.546234128034-0jinhs8tlu0jb2d4on5nselmt4riuftg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDhG18dEbb8mnUKgehNkGKJj-Sn1wW8z-Y</string>
+	<key>GCM_SENDER_ID</key>
+	<string>546234128034</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.vbataev.ecommerce</string>
+	<key>PROJECT_ID</key>
+	<string>vbecommerce-5555a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vbecommerce-5555a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:546234128034:ios:58c70d95f44c8786</string>
+	<key>DATABASE_URL</key>
+	<string>https://vbecommerce-5555a.firebaseio.com</string>
+</dict>
+</plist>
