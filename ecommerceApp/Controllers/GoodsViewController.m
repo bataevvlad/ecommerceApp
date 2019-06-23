@@ -10,6 +10,7 @@
 #import "ProductCell.h"
 #import "ProductModel.h"
 #import "InfoViewController.h"
+#import "UIRefreshControl+beginRefresh.h"
 #import <FirebaseDatabase/FirebaseDatabase.h>
 
 @interface GoodsViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -41,15 +42,16 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    [self.tableView.refreshControl addTarget:self action:@selector(reloadProducts) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = [UIRefreshControl new];
+    [self.refreshControl addTarget:self action:@selector(reloadProducts) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:self.refreshControl];
+    [self.refreshControl setTintColor:[UIColor whiteColor]];
+    [self.refreshControl beginRefreshingProgrammatically];
+    
     [self reloadProducts];
 }
 
 #pragma mark TableView
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 210;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -89,6 +91,7 @@
                 [weakSelf.productsArray addObject:model];
             }
         }];
+        [self.refreshControl endRefreshing];
         [weakSelf.tableView reloadData];
     }];
 }

@@ -24,7 +24,7 @@
     
     GoodsViewController* controller = [[GoodsViewController alloc] init];
     UINavigationController* navigationContoller = [[UINavigationController alloc] initWithRootViewController:controller];
-
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = navigationContoller;
     [self.window makeKeyAndVisible];

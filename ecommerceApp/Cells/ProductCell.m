@@ -27,8 +27,6 @@
     self.titleLabel.adjustsFontSizeToFitWidth = YES;
     self.descriptionLabel.adjustsFontSizeToFitWidth = YES;
     
-    
-
 }
 
 @end

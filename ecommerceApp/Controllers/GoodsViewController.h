@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GoodsViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITableView* tableView;
+@property (strong,nonatomic) UIRefreshControl * refreshControl;
+
 
 @end
 

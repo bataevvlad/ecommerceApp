@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3CA0B8F4832AD0BB3B4C9DE7 /* Pods_ecommerceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE21925646A61C868306BA15 /* Pods_ecommerceApp.framework */; };
+		840CBCAF22C0302800972EEE /* UIRefreshControl+beginRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CBCAE22C0302800972EEE /* UIRefreshControl+beginRefresh.m */; };
+		840CBCB222C033BD00972EEE /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840CBCB122C033BD00972EEE /* ProductCell.xib */; };
 		8416826022BF911B00A7155D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416825F22BF911B00A7155D /* AppDelegate.m */; };
 		8416826322BF911B00A7155D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416826222BF911B00A7155D /* ViewController.m */; };
 		8416826622BF911B00A7155D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8416826422BF911B00A7155D /* Main.storyboard */; };
 		8416826822BF911B00A7155D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8416826722BF911B00A7155D /* Assets.xcassets */; };
 		8416826E22BF911B00A7155D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416826D22BF911B00A7155D /* main.m */; };
 		8416829922BF93D700A7155D /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416829622BF93D700A7155D /* ProductCell.m */; };
-		8416829A22BF93D800A7155D /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8416829722BF93D700A7155D /* ProductCell.xib */; };
 		841682A022BF93F800A7155D /* ProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416829E22BF93F800A7155D /* ProductModel.m */; };
 		841682A122BF93F800A7155D /* OrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416829F22BF93F800A7155D /* OrderModel.m */; };
 		841682AC22BF941F00A7155D /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841682A422BF941E00A7155D /* InfoViewController.xib */; };
@@ -29,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		412741555CD7F156C5DAE793 /* Pods-ecommerceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp.release.xcconfig"; path = "Target Support Files/Pods-ecommerceApp/Pods-ecommerceApp.release.xcconfig"; sourceTree = "<group>"; };
+		840CBCAD22C0302800972EEE /* UIRefreshControl+beginRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+beginRefresh.h"; sourceTree = "<group>"; };
+		840CBCAE22C0302800972EEE /* UIRefreshControl+beginRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+beginRefresh.m"; sourceTree = "<group>"; };
+		840CBCB122C033BD00972EEE /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		8416825B22BF911B00A7155D /* ecommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8416825E22BF911B00A7155D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8416825F22BF911B00A7155D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -39,7 +43,6 @@
 		8416826C22BF911B00A7155D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8416826D22BF911B00A7155D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8416829622BF93D700A7155D /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ecommerceApp/Cells/ProductCell.m; sourceTree = SOURCE_ROOT; };
-		8416829722BF93D700A7155D /* ProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProductCell.xib; path = ecommerceApp/Cells/ProductCell.xib; sourceTree = SOURCE_ROOT; };
 		8416829822BF93D700A7155D /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ecommerceApp/Cells/ProductCell.h; sourceTree = SOURCE_ROOT; };
 		8416829C22BF93F800A7155D /* ProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductModel.h; path = ecommerceApp/Models/ProductModel.h; sourceTree = SOURCE_ROOT; };
 		8416829D22BF93F800A7155D /* OrderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrderModel.h; path = ecommerceApp/Models/OrderModel.h; sourceTree = SOURCE_ROOT; };
@@ -81,6 +84,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		840CBCB022C0321400972EEE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				840CBCAD22C0302800972EEE /* UIRefreshControl+beginRefresh.h */,
+				840CBCAE22C0302800972EEE /* UIRefreshControl+beginRefresh.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		8416825222BF911B00A7155D = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +114,7 @@
 		8416825D22BF911B00A7155D /* ecommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				840CBCB022C0321400972EEE /* Categories */,
 				841682A222BF940D00A7155D /* Controllers */,
 				8416829B22BF93E400A7155D /* Models */,
 				8416829522BF93C300A7155D /* Cells */,
@@ -124,7 +137,7 @@
 			children = (
 				8416829822BF93D700A7155D /* ProductCell.h */,
 				8416829622BF93D700A7155D /* ProductCell.m */,
-				8416829722BF93D700A7155D /* ProductCell.xib */,
+				840CBCB122C033BD00972EEE /* ProductCell.xib */,
 			);
 			name = Cells;
 			path = Models;
@@ -226,8 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				841682AE22BF941F00A7155D /* OrderViewController.xib in Resources */,
+				840CBCB222C033BD00972EEE /* ProductCell.xib in Resources */,
 				841682B622BF9B8900A7155D /* GoogleService-Info.plist in Resources */,
-				8416829A22BF93D800A7155D /* ProductCell.xib in Resources */,
 				8416826822BF911B00A7155D /* Assets.xcassets in Resources */,
 				841682AC22BF941F00A7155D /* InfoViewController.xib in Resources */,
 				841682B422BF97E100A7155D /* LaunchScreen.storyboard in Resources */,
@@ -291,6 +304,7 @@
 				8416826322BF911B00A7155D /* ViewController.m in Sources */,
 				841682B122BF941F00A7155D /* GoodsViewController.m in Sources */,
 				8416829922BF93D700A7155D /* ProductCell.m in Sources */,
+				840CBCAF22C0302800972EEE /* UIRefreshControl+beginRefresh.m in Sources */,
 				841682B022BF941F00A7155D /* InfoViewController.m in Sources */,
 				841682A122BF93F800A7155D /* OrderModel.m in Sources */,
 				841682A022BF93F800A7155D /* ProductModel.m in Sources */,
